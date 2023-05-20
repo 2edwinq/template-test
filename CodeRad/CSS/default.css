@@ -116,7 +116,7 @@ img {
   }
 }
 
-@media (media-width: 992px) {
+@media (min-width: 992px) {
   footer .container {
     max-width: 960px
   }

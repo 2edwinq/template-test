@@ -224,7 +224,7 @@ h2 p {
   margin-bottom: 0;
 }
 
-.pricing-table .container {
+.pricing-table {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   gap: var(--size-30);
@@ -236,11 +236,6 @@ h2 p {
   background-color: var(--white);
   border-radius: 8px;
   padding: var(--size-14);
-}
-
-.price-card .checked {
-  ;
-  /* color: var(--success); */
 }
 
 .price-card .times {
