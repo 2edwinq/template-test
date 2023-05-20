@@ -58,7 +58,7 @@
           <h2>Meeting your needs<br>
             in website building</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        we add more content for the space to show 3 lines.
+                                                                                                            we add more content for the space to show 3 lines.
           </p>
           <a href="#" class="btn btn-primary">Learn More</a>
         </div>
@@ -303,11 +303,116 @@
                   <div class="bottom">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, dignissimos.</p>
                   </div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-      </body>
-    </html>
-  </body>
-</html>
+          </section>
+          <!--FOOTER SECTION=  -->
+          <footer class="bg-footer">
+            <div class="container">
+              <section class="footer-top">
+                <div class="footer-col">
+                  <h5>Need Help</h5>
+                  <div class="contact-info">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-location-dot"></i>1 Amsteroum, NY 10234</li>
+                      <li>
+                        <i class="fa-solid fa-phone-alt"></i>+369 555 555 555</li>
+                      <li>
+                        <i class="fa-solid fa-mobile-alt"></i>+369 555 555 555</li>
+                      <li>
+                        <i class="fa-solid fa-envelope"></i>contact@coderad.com</li>
+                    </ul>
+                  </div>
+                  <div class="social-icons">
+                    <ul>
+                      <li><a href="facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                      <li><a href="twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                      <li><a href="linkin.com"><i class="fa-brands fa-instagram"></i></a></li>
+                      <li><a href="duotone.com"><i class="fa-brands fa-medium"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-col">
+                  <h5>Services</h5>
+                  <div class="services-wrapper">
+                    <h5>Mobile Apps</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="services-wrapper">
+                    <h5>Brand Identity</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="services-wrapper">
+                    <h5>Social Media</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                  </div>
+                </div>
+                <div class="footer-col">
+                  <h5>Recent Posts</h5>
+                  <div class="recent-post">
+                    <div class="post-img-wrapper">
+                      <img src="./assets/blog1.jpg" alt="blog 1">
+                    </div>
+                    <div class="post-inner">
+                      <h6>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+                      </h6>
+                      <span>Sept 5th, 2020</span>
+                    </div>
+                  </div>
+                  <div class="recent-post">
+                    <div class="post-img-wrapper">
+                      <img src="./assets/blog2.jpg" alt="blog 2">
+                    </div>
+                    <div class="post-inner">
+                      <h6>
+                        <a href="#">Lorem ipsum dolor sit amet consectetur.</a>
+                      </h6>
+                      <span>Sept 5th, 2020</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="footer-bottom">
+                <div class="footer-bottom-wrapper">
+                  <div class="copyright">
+                    <p>Copyright @ 2020 CodeRAD Creations</p>
+                  </div>
+                  <div class="footer-bottom-links">
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Blog</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </footer>
+
+          <a href="#pagetop" id="scrollup">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+
+          <script>
+            const nav = document.getElementById("topnav");
+            window.onscroll = function () {
+              if (window.pageYOffset > 100) {
+                nav.classlist.add("sticky");
+              }
+            }
+
+            const navButton = document.querySelector("button[aria-expanded]");
+
+            function toggleNav({target}) {
+              const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+              navButton.setAttribute('aria-expanded', ! expanded);
+            }
+            navButton.addEventListener('click', toggleNav);
+          </script>
+        </body>
+      </html>
