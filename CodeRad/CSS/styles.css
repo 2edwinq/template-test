@@ -58,7 +58,7 @@
 
 .bg-header {
   background-image: url("../assets/bg-header-1.jpg");
-  padding: 4.6875rem 0;
+  padding: var(--size-100) 0;
 }
 
 .video-demo {
@@ -82,10 +82,10 @@
   color: var(--white);
   font-size: 0.8125rem;
   font-weight: 600;
-  font-family: "Hind", sans-serif;
+  font-family: "Hinds", sans-serif;
   text-transform: uppercase;
-  margin-right: 2.5rem;
-  line-height: 20px;
+  margin-right: var(--size-40);
+  line-height: var(size-20);
 }
 
 .hero-header {
@@ -116,7 +116,7 @@
 }
 
 .block-text h2 {
-  font-size: var(--size-30);
+  font-size: var(--size-40);
   font-family: "Hinds", sans-serif;
   font-weight: 600;
   color: var(--font-color-dark);
@@ -145,11 +145,11 @@
 }
 
 .service-card span {
-  width: 70px;
-  height: 70px;
+  width: var(--size-70);
+  height: var(--size-70);
   display: block;
   float: left;
-  margin-right: 15px;
+  margin-right: var(--size-14);
   border-radius: 50%;
   background-color: var(--font-color-light);
 }
@@ -217,6 +217,12 @@ span.bg-color-6 {
 }
 
 /* PRICING SECTION */
+.block-text.pricing-header {
+  text-align: center;
+  padding-right: 0;
+  margin: var(--size-100) 0;
+}
+
 .pricing-header,
 h2 p {
   text-align: center;
@@ -226,16 +232,20 @@ h2 p {
 
 .pricing-table {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-  gap: var(--size-30);
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: var(--size-18);
   margin: auto;
   align-items: flex-start;
 }
 
 .price-card {
   background-color: var(--white);
-  border-radius: 8px;
+  border-radius: var(--size-8);
   padding: var(--size-14);
+}
+
+.price-card .checked {
+  color: var(--success);
 }
 
 .price-card .times {
@@ -298,25 +308,29 @@ h2 p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: 1fr 1fr;
-  gap: var(--size-10);
+  gap: var(--size-20);
   margin: 0 auto;
 }
 
 .testimonials .block-text {
   padding-right: 0;
   text-align: center;
-  margin: var(--size-100);
+  margin: var(--size-100) 0;
 }
 
 .testimonial-card {
   border: 1px solid #dedede;
   border-radius: 8px;
-  padding: var(--size-10);
+  padding: var(--size-30);
 }
 
-.testimonial-card .lg {
+.testimonial-card.lg {
   grid-row: 1 / 3;
   grid-column: 1 / 2;
+}
+
+.testimonial-card.md .bottom p {
+  font-size: var(--size-14);
 }
 
 .testimonial-card .top {
@@ -326,20 +340,20 @@ h2 p {
 }
 
 .testimonial-card img.profile {
-  width: var(--size-100);
+  width: var(--size-70);
   border-radius: 50%;
-  margin-right: var(--size-16);
+  margin-right: var(--size-20);
 }
 
-.testimonial-card .md img.profile {
-  width: 5rem;
+.testimonial-card.lg img.profile {
+  width: var(--size-80);
 }
 
 .top h4 {
   margin-top: 0;
   margin-bottom: var(--size-10);
-  font-weight: 900;
-  font-size: var(--size-10);
+  font-weight: 600;
+  font-size: var(--size-18);
 }
 
 .top-info span {
@@ -348,21 +362,21 @@ h2 p {
 
 .bottom p {
   margin: 0;
-  font-size: var(--size-10);
+  font-size: var(--size-16);
   line-height: 1.6;
 }
 
 .quote {
   width: 70px;
   float: right;
-  margin-top: var(--size-14);
+  margin-top: var(--size-16);
 }
 
 footer .footer-top {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--size-50);
-  padding: var(--size-100);
+  padding: var(--size-100) 0;
 }
 
 .bg-footer {
@@ -382,6 +396,7 @@ footer .footer-col {
   color: var(--white);
   margin-bottom: var(--size-10);
   font-size: var(--size-16);
+  font-weight: 500;
 }
 
 .contact-info li {
@@ -392,17 +407,17 @@ footer .footer-col {
 
 .contact-info li i {
   width: var(--size-20);
-  font-size: var(--size-20);
+  font-size: var(--size-12);
 }
 
 .social-icons ul li {
   display: inline-block;
-  margin-right: var(--size-20);
+  margin-right: var(--size-16);
 }
 
 .social-icons ul li a {
   color: var(--white);
-  font-size: var(--size-10);
+  font-size: var(--size-16);
 }
 
 .service-wrapper h5 {
@@ -414,12 +429,12 @@ footer .footer-col {
   font-size: var(--size-10);
 }
 
-.recent-posts {
+.recent-post {
   display: flex;
-  margin-bottom: var(--size-10);
+  margin-bottom: var(--size-16);
 }
 
-.recent-posts .post-img-wrapper {
+.recent-post .post-img-wrapper {
   width: var(--size-150);
   margin-right: var(--size-10);
 }
