@@ -1,8 +1,6 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode", "dzhavat.bracket-pair-toggler", "tal7aouy.rainbow-bracket"
   ],
-  "unwantedRecommendations": [
-    "sidthesloth.html5-boilerplate"
-  ]
+  "unwantedRecommendations": ["sidthesloth.html5-boilerplate"]
 }
